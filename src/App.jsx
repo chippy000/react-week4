@@ -20,6 +20,7 @@ const INITIAL_TEMPLATE_DATA = {
   is_enabled: false,
   imageUrl: "",
   imagesUrl: [],
+  favorite: "",
 };
 
 

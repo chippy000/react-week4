@@ -114,7 +114,7 @@ function ProductModal ({
       let url = `${VITE_API_BASE}/api/${VITE_API_PATH}/admin/product`;
       let method = 'post';
       if (modalType === "edit") {
-        url = `${VITE_API_BASE}/api/${VITE_API_PATH}/admin/${id}`;
+        url = `${VITE_API_BASE}/api/${VITE_API_PATH}/admin/product/${id}`;
         method = 'put';
       }
 
@@ -348,21 +348,21 @@ function ProductModal ({
                       </div>
                     </div>
                     <div className="mb-3">
-                      <label className="form-check-label" htmlFor="size">
-                        尺寸
+                      <label className="form-check-label" htmlFor="favorite">
+                        喜愛程度
                       </label>
                       <select
-                        id="size"
-                        name="size"
+                        id="favorite"
+                        name="favorite"
                         className="form-select"
                         aria-label="Default select example"
-                        value={tempData.size}
+                        value={tempData.favorite}
                         onChange={(e) =>handleModalInputChange(e)}
                       >
                         <option value="">請選擇</option>
-                        <option value="lg">大杯</option>
-                        <option value="md">中杯</option>
-                        <option value="sm">小杯</option>
+                        <option value="good">很喜歡</option>
+                        <option value="normal">一般</option>
+                        <option value="bad">不喜歡</option>
                       </select>
                     </div>
                   </div>
