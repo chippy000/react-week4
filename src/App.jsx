@@ -54,7 +54,6 @@ function App() {
       ...INITIAL_TEMPLATE_DATA,
       ...product,
     })));
-    console.log('templateProduct_app',templateProduct);
     productModalRef.current.show();
   }
 
